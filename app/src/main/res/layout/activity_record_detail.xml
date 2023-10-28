@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_e9f8ff_to_def3ff"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/ic_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/record_successfully"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tv_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_486d78"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/info_item_bg"
+                    app:layout_constraintDimensionRatio="1:0.42"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_eaf8ff_r12"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:id="@+id/tv_systolic_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Systolic"
+                            android:textColor="@color/color_122f40"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mmHg"
+                            android:textColor="@color/color_486d78"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_systolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@color/color_122f40"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_eaf8ff_r12"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:id="@+id/tv_diastolic_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diastolic"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mmHg"
+                            android:textColor="@color/color_486d78"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_diastolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="78"
+                            android:textColor="@color/color_122f40"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_eaf8ff_r12"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp">
+
+                        <TextView
+                            android:id="@+id/tv_pulse_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulse"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BPM"
+                            android:textColor="@color/color_486d78"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_pulse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_122f40"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_d5f0fc_to_bde0f1_r16"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:id="@+id/stage_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hypertension·Stage 1"
+                    android:textColor="@color/color_122f40"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stage_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_486d78"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:maxHeight="6.0dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:progress="0"
+                    android:progressDrawable="@mipmap/seekbar_seek"
+                    android:thumb="@mipmap/seekbar_thumnb" />
+
+                <TextView
+                    android:id="@+id/stage_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_486d78"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_5d8bca_to_4674b6_r16"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/article_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Default"
+                    android:textColor="@color/color_eaf8ff"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/item_line"
+                    app:layout_constraintEnd_toStartOf="@+id/item_rem"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/item_line"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="#6B9EE6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/item_rem"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Default"
+                    android:textColor="@color/color_eaf8ff"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/item_rem"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_line" />
+
+                <ImageView
+                    android:id="@+id/item_rem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_article_rem"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@mipmap/btn_bg"
+                    android:gravity="center"
+                    android:paddingStart="36dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="36dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/go_home"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

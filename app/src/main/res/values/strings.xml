@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PressUp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="no_bp_data">No BP Data</string>
+    <string name="no_bp_data_tips">Please enter your first blood pressure record, and we will generate analytical data for you.</string>
+    <string name="enter">Enter</string>
+    <string name="save">Save</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="pulse">Pulse</string>
+    <string name="new_record">New Record</string>
+    <string name="add_bp_record">Add BP Record</string>
+    <string name="enter_bp_readings">Enter BP Readings</string>
+    <string name="systolic_x_diastolic_x">Systolic Reading: %d, Diastolic Reading: %d.</string>
+    <string name="go_home">Go Home</string>
+    <string name="edit_record">Modification</string>
+    <string name="history_records">History Records</string>
+    <string name="record_successfully">Record Successfully</string>
+    <string name="pressup_private_policy">PressUp Private Policy</string>
+    <string name="pressup_private_policy_content">
+        Please be aware that PressUp should not be regarded as a replacement for professional medical advice, diagnosis, or treatment. This software does not possess the ability to evaluate blood pressure. Its main function is to aid users in easily recording and monitoring their blood pressure readings.\n\n
+        This Privacy Policy outlines how PressUp (referred to as "we," "our," or "us") collects, uses, discloses, and safeguards your personal information when you use our software application. Your privacy is important to us, and we are committed to ensuring the confidentiality and security of your data.\n\n
+        Information We Collect:\n\n
+        - PressUp does not collect, store, or access any personal or health-related information, including blood pressure measurements.\n\n
+        - We do not collect any location data or device-specific information.\n\n
+        Children\'s Privacy:\n\n
+        - PressUp is not intended for use by individuals under the age of 13. We do not knowingly collect information from children under the age of 13. If you believe we have inadvertently collected information from a child under 13, please contact us so that we can promptly remove it.\n\n
+        Contact Us:\n\n
+        - If you have any questions or concerns about this Privacy Policy, please contact us.
+    </string>
+    <string name="details">Details</string>
+    <string name="stage_level_title_1">Hypotension</string>
+    <string name="stage_level_title_2">Normal</string>
+    <string name="stage_level_title_3">Elevated</string>
+    <string name="stage_level_title_4">Hypertension·Stage 1</string>
+    <string name="stage_level_title_5">Hypertension·Stage 2</string>
+    <string name="stage_level_title_6">Hypertension·Stage 3</string>
+    <string name="stage_level_tips_1">Seek advice from a healthcare specialist regarding low blood pressure.</string>
+    <string name="stage_level_tips_2">Embrace a holistic lifestyle to sustain ideal blood pressure levels.</string>
+    <string name="stage_level_tips_3">Adjust your daily habits to manage high blood pressure.</string>
+    <string name="stage_level_tips_4">Attain effective control through lifestyle modifications and ongoing monitoring.</string>
+    <string name="stage_level_tips_5">Work in conjunction with a healthcare professional to explore appropriate treatment options.</string>
+    <string name="stage_level_tips_6">Taking prompt steps is essential for reducing potential health risks.</string>
+    <string name="error_tips">Please confirm that the systolic value surpasses the diastolic value.</string>
+
+    <string name="article_title_1">The Hidden Dangers of Hypotension: What You Need to Know</string>
+    <string name="article_title_2">Managing Low Blood Pressure: Tips for a Healthier Lifestyle</string>
+    <string name="article_title_3">Low Blood Pressure and Dehydration: Staying Hydrated for Better Health</string>
+    <string name="article_title_4">Diet and Nutrition for Preventing Low Blood Pressure</string>
+    <string name="article_title_5">Orthostatic Hypotension: How Position Affects Blood Pressure</string>
+
+
+</resources>

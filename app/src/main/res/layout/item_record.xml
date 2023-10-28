@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_d1ebfd_to_bbdaf3_r16"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/stage_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:includeFontPadding="false"
+            android:text="Hypotension"
+            android:textColor="@color/color_122f40"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/iv_level"
+            app:layout_constraintTop_toTopOf="@+id/iv_level" />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:text="2023-04-02 12:35"
+            android:textColor="@color/color_486d78"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_level"
+            app:layout_constraintStart_toEndOf="@+id/iv_level" />
+
+        <ImageView
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/ic_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/iv_level">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_eaf8ff_r12"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:id="@+id/tv_systolic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Systolic"
+                    android:textColor="@color/color_122f40"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mmHg"
+                    android:textColor="@color/color_486d78"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_systolic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/color_122f40"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_eaf8ff_r12"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:id="@+id/tv_diastolic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diastolic"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mmHg"
+                    android:textColor="@color/color_486d78"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_diastolic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="78"
+                    android:textColor="@color/color_122f40"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_eaf8ff_r12"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:id="@+id/tv_pulse_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulse"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="@color/color_486d78"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_pulse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="@color/color_122f40"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
