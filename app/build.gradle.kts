@@ -4,6 +4,7 @@ plugins {
     id("kotlin-parcelize")
     id("kotlin-kapt")
     id("stringfog")
+    id("android-junk-code")
 }
 
 stringfog {
@@ -11,6 +12,24 @@ stringfog {
     enable = true
     // 加解密库的实现类路径，需和上面配置的加解密算法库一致。
     implementation = "com.github.megatronking.stringfog.xor.StringFogImpl"
+}
+
+androidJunkCode {
+    variantConfig {
+        create("release") {
+            //注意：这里的release是变体名称，如果没有设置productFlavors就是buildType名称，如果有设置productFlavors就是flavor+buildType，例如（freeRelease、proRelease）
+            packageBase = "cn.matisse.copilot.activity"  //生成java类根包名
+            packageCount = 35 //生成包数量
+            activityCountPerPackage = 3 //每个包下生成Activity类数量
+            excludeActivityJavaFile = false
+            //是否排除生成Activity的Java文件,默认false(layout和写入AndroidManifest.xml还会执行)，主要用于处理类似神策全埋点编译过慢问题
+            otherCountPerPackage = 55  //每个包下生成其它类的数量
+            methodCountPerClass = 23  //每个类下生成方法数量
+            resPrefix = "matisse_"  //生成的layout、drawable、string等资源名前缀
+            drawableCount = 283  //生成drawable资源数量
+            stringCount = 291  //生成string数量
+        }
+    }
 }
 
 android {
